@@ -22,3 +22,31 @@ $ conda create -n mini-rag python=3.8
 $ conda activate mini-rag
 ```
 
+
+# install backages
+
+```bash
+$ pip install -r requirements.txt
+```
+
+## setup the environment variables
+
+```bash
+$ cp .env.example.env
+```
+
+set your environment variables like `.env` file. like `OPENAI_API_KEY` value.    
+
+
+# Run uvicorn for production
+
+```bash
+$ uvicorn main:app
+```
+
+#### Run uvicorn optimized for development only 
+
+```bash
+$ uvicorn main:app --reload --host 0.0.0.0 --port 5000
+
+```

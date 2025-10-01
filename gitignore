@@ -120,9 +120,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env      # only root-level .env
-*.env     # any file ending with .env in subdirectories
-
+.env
 .venv
 env/
 venv/

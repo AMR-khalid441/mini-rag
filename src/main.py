@@ -1,8 +1,6 @@
 from fastapi import FastAPI
-from dotenv import load_dotenv
-from routes import base  # assuming your routes/base.py exists
-
-load_dotenv(".env")  # load environment variables
+from helper.config import get_settings
+from routes import base
 
 app = FastAPI()
 
